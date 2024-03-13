@@ -8,7 +8,15 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 
 const firebaseConfig = {
-  /* firebase config api key and others */
+  apiKey: 'AIzaSyBuOXA2dVh7Iim3oEZ_wLs4xmu6Sq7RIdw',
+  authDomain: 'lab-tv-movie.firebaseapp.com',
+  databaseURL:
+    'https://lab-tv-movie-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'lab-tv-movie',
+  storageBucket: 'lab-tv-movie.appspot.com',
+  messagingSenderId: '305543977569',
+  appId: '1:305543977569:web:cbde7a5377d0bdfee46820',
+  measurementId: 'G-58C8VE42GN',
 };
 
 export const appConfig: ApplicationConfig = {
@@ -16,10 +24,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withViewTransitions()),
     provideHttpClient(),
     provideAuth0({
-      domain: 'yourt auth0 domain',
-      clientId: ' your client id ',
+      domain: 'dev-hgt3pxxduftflrlo.us.auth0.com',
+      clientId: 'VClVLVEV1X68ojkDjs3oTpowAu9EjE2v',
       authorizationParams: {
-        redirect_uri: 'your site',
+        redirect_uri: 'https://damiano-maka.github.io/auth0/',
         audience: 'http://public-api/',
         scope:
           'openid profile email offline_access read:roles read:users read:logs ',
