@@ -57,7 +57,7 @@ interface contactForm {
             (click)="
               auth.logout({
                 logoutParams: {
-                  returnTo: 'https://dami-streaming.vercel.app'
+                  returnTo: 'https://auth0-blush.vercel.app/'
                 }
               })
             "
