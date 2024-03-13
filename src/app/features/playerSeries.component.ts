@@ -51,7 +51,7 @@ export default class PlayerComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params) => {
       this.videoId = params.get('id');
       this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        `https://movie.smashystream.xyz/17379b54-0e4a-45ae-a319-54b42fd08a19#/media/tmdb-show-${this.videoId}`
+        `https://embed.smashystream.com/playere.php?tmdb=${this.videoId}`
       );
     });
   }
